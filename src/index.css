@@ -1,0 +1,103 @@
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+  /* Light Theme (Default) */
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --header-bg: linear-gradient(135deg, #f5f7fa 0%, #e9ecf1 100%);
+  --header-text: #000000;
+  --subtitle-text: #555555;
+  --editor-bg: #ffffff;
+  --editor-text: #000000;
+  --toolbar-bg: #f8f9fa;
+  --toolbar-border: #e9ecef;
+  --toolbar-btn-bg: #ffffff;
+  --toolbar-btn-text: #000000;
+  --toolbar-btn-hover-bg: #eeeeee;
+  --toolbar-btn-active-bg: #dddddd;
+  --btn-bg: #000000;
+  --btn-text: #ffffff;
+  --btn-hover-bg: #333333;
+  --preview-bg: #ffffff;
+  --preview-header-bg: #f8f9fa;
+  --preview-border: #e9ecef;
+  --error-bg: #f8d7da;
+  --error-text: #721c24;
+  --error-border: #f5c6cb;
+  --footer-bg: rgba(0, 0, 0, 0.1);
+  --footer-text: #000000;
+  --link-color: #000000;
+  --btn-accept-bg: #28a745;
+  --btn-accept-text: #ffffff;
+  --btn-accept-hover-bg: #218838;
+  --btn-reject-bg: #dc3545;
+  --btn-reject-text: #ffffff;
+  --btn-reject-hover-bg: #c82333;
+  --highlight-bg: rgba(255, 255, 0, 0.3);
+}
+
+[data-theme='dark'] {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --header-bg: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+  --header-text: #ffffff;
+  --subtitle-text: #aaaaaa;
+  --editor-bg: #121212;
+  --editor-text: #ffffff;
+  --toolbar-bg: #1f1f1f;
+  --toolbar-border: #333333;
+  --toolbar-btn-bg: #2a2a2a;
+  --toolbar-btn-text: #ffffff;
+  --toolbar-btn-hover-bg: #444444;
+  --toolbar-btn-active-bg: #555555;
+  --btn-bg: #ffffff;
+  --btn-text: #000000;
+  --btn-hover-bg: #dddddd;
+  --preview-bg: #121212;
+  --preview-header-bg: #1f1f1f;
+  --preview-border: #333333;
+  --error-bg: #2c1a1f;
+  --error-text: #f5c6cb;
+  --error-border: #721c24;
+  --footer-bg: rgba(255, 255, 255, 0.1);
+  --footer-text: #ffffff;
+  --link-color: #ffffff;
+  --highlight-bg: rgba(255, 255, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
