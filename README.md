@@ -303,6 +303,11 @@ MIT
 - [Hugging Face](https://huggingface.co/) - AI model hosting
 - [Vite](https://vitejs.dev/) - Build tool
 
+## Demo Video
+
+Watch the demo:  
+[Demo video](https://drive.google.com/drive/folders/1BuMZ9Q3G6XX18crXQROXIjVrio5V5i2v?usp=sharing)
+
 ---
 
 **Built with ❤️ for the AI Editor Assignment**
